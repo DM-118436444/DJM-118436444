@@ -1,52 +1,68 @@
-#Tilted Page Scroll by Pete R.
-Create a beautilful 3D tilted scrolling effect for your website with jQuery Tilted Page Scroll.
-Created by [Pete R.](http://www.thepetedesign.com), Founder of [Travelistly](http://www.Travelistly.com) and [BucketListly](http://www.bucketlistly.com)
+# [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/)
 
-[![Tilted Page Scroll](http://www.thepetedesign.com/images/tiltedpage_scroll_image.png "Tilted Page Scroll")](http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html)
+[Resume](https://startbootstrap.com/template-overviews/resume/) is a resume and CV theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
-## Demo
-[View demo](http://www.thepetedesign.com/demos/tiltedpage_scroll_demo.html)
+## Preview
 
-## Compatibility
-Modern browsers such as Chrome, Firefox, and Safari on both desktop and smartphones have been tested. I have not tested this on IE.
+[![Resume Preview](https://startbootstrap.com/assets/img/templates/resume.jpg)](https://blackrockdigital.github.io/startbootstrap-resume/)
 
-## Basic Usage
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-resume/)**
 
-With this plugin, you can create a beautiful scrolling effect and turn a simple layout website into something surprising. 
+## Status
 
-To do this, first you have to include the latest jQuery library together with `jquery.tiltedpage_scroll.js` and `tiltedpage_scroll.css` into your document's `<head>`. Now lay out your HTML markup as follows:
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-resume/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-resume.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-resume)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-resume/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-resume?type=dev)
 
+## Download and Installation
 
-````html
-<div class="main">
-  <section class="page1">
-    ...
-  </section>
-  <section class="page2">
-    ...
-  </section>
-  ...
-  <section class="last-page">
-    ...
-  </section>
-</div>
-````
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/resume/)
+* Install via npm: `npm i startbootstrap-resume`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-resume.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-resume)
 
-That's it for the HTML part. Isn't that easy? Now, you can just call the function like this, and watch the magic happens:
+## Usage
 
-````javascript
-  $(".main").tiltedpage_scroll({
-    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
-    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
-    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
-    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
-    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
-  });
-````
+### Basic Usage
 
-Now you will have another cool way to showcase your website to your viewers. I hope you find this free plugin useful.
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-If you want to see more of my plugins, visit [The Pete Design](http://www.thepetedesign.com/#design), or follow me on [Twitter](http://www.twitter.com/peachananr) and [Github](http://www.github.com/peachananr).
+### Advanced Usage
 
-## Other Resources
-- Tutorial (Coming Soon)
+After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+
+#### Gulp Tasks
+
+- `gulp` the default task that builds everything
+- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
+
+You must have npm and Gulp installed globally on your machine in order to use these features.
+
+## Bugs and Issues
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-resume/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/resume/).
+
+## About
+
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
+
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
