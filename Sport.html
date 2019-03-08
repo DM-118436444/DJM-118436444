@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sport</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #00B0FF;
+}
+
+.header {
+    text-align: center;
+    background-image: url(tennis.jpg);
+    padding: 20px 500px;
+    color: white;
+}
+
+.button{
+  background-color: #10707f;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #333;
+  color: white;
+}
+p.round1 {
+  border: 2px solid black ;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+   
+      
+    
+    <div class="header">
+    <h1>Sport</h1>
+</div>
+             <button type="Button" onclick="window.location.href='Interests.html'" class='button' style="float: left" > Back</button>
+       
+    <h2>Tennis</h2>
+    <p class="round1"> I have been playing tennis from the age of ten and currently play with UCC Tennis.
+         </p>
+    
+    <picture> 
+        <source media="(min-width: 650px)" srcset="tennis.jpg">
+        <source media="(min-width: 465px)" srcset="tennis.jpg">       
+        <img src="tennis.jpg" alt="Cardiff" style="width:500px;"  >
+</picture>
+
+<h2>Soccer</h2>
+        <p class="round1">This year I will have been playing soccer with Blarney for 11 years. I also plan to join UCC Soccer after 
+            injury at the start of Semester One. 
+       </p>
+    
+    <picture> 
+        <source media="(min-width: 650px)" srcset="football.jpg">
+        <source media="(min-width: 465px)" srcset="football.jpg">       
+        <img src="football.jpg" alt="Soccer" style="width:500px;"> 
+</picture>
+  
+       
+       
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+

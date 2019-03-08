@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Strategic Consulting Services</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+    text-align: center;
+    background-image: url(consulting.jpg);
+    padding:15px 500px;
+    color: white;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 50px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;  
+}
+
+/* Left and right column */
+.column.side {
+  width: 15%;
+}
+
+.column.middle {
+  width: 60%;
+}
+
+.button{
+  background-color: #10707f;
+  border: none;
+  color: white;
+  padding: 180px 350px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Strategic Consulting Services</h1>
+</div>
+
+<div class="topnav">
+  <a href="Blockchain.html">Blockchain</a>
+  <a href="Autonomous.html">Autonomous Things</a>
+  <a href="ImmersiveExperience.html">Immersive Experience</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Learn more</h2>
+    <p>Click on one of the links above to learn more about the technologies Blockchain, Autonomous Things and Immersive Experiences.</p>
+  </div>
+  
+  
+    <button type="Button" onclick="window.location.href='eBus1.php'" class='button'> Click here for our Services</button>
+      
+</body>
+</html>
+

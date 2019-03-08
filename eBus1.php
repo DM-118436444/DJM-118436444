@@ -5,24 +5,38 @@ $_SESSION['txtTotal'] = $totalValue;
 ?>
 <!DOCTYPE html>
 <html lang="en" xmins="http.//www.w3.org/1999/xhtml">
-    <head>
+    <head>     
         <meta charset="utf-8"/>
         <title>EBusiness 1</title>
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <style>
+            #roundedborder{
+             border-radius: 25px;
+             border: 2px solid black;
+             padding: 20px;
+             width: 200px;
+             height: 150px;
+             background-color: #00B0FF;
+            }
+            
+            
+            
+            
+        </style>
     </head>
     <body>
         <div class="form">
-            <form name="intCalc" method="post" action="eBus3.php">
-                <h1>Shop Calculator</h1>
+            <form name="intCalc" method="post" action="eBus2.php">
+                <h1>Services Calculator</h1>
                 <hr />
                 <center>
-                    <table cellspacing="10">
+                    <table cellspacing="10" id="roundedborder">
                         <tr>
-                            <td><b>Beverage</b></td>
+                            <td><b>Services</b></td>
                         </tr>
                         <tr>
                             <td>Blockchain</td>
-                            <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" /></td>
+                            <td><input type="radio" id="Blockchain"  name="rdoGroup" value="1000" required=""/></td>
                         </tr>
                         <tr>
                             <td>Autonomous Things</td>
@@ -30,7 +44,7 @@ $_SESSION['txtTotal'] = $totalValue;
                         </tr>
                          <tr>
                              <td>Immersive Experience</td>
-                            <td><input type="radio" id="Immersive Experience" name="rdoGroup" value="3000" /></td>
+                            <td><input type="radio" id="ImmersiveExperience" name="rdoGroup" value="3000" /></td>
                         </tr>                   
                     </table>
                 </center>
@@ -38,7 +52,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 
                 
                 <center>
-                    <table cellspacing="10">
+                    <table cellspacing="10" id="roundedborder">
                 <tr> 
                     <td><b></b></td>
                     <td><b>Amount</b></td>
@@ -48,7 +62,7 @@ $_SESSION['txtTotal'] = $totalValue;
                     <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>                   
                 </tr>
                 <tr>
-                    <td>-Discount @30%</td>
+                    <td>-Discount @10%</td>
                     <td><input type="text" id="txtDisc" name="txtDisc" readonly/></td>
                 </tr>
                 <tr>
@@ -77,7 +91,7 @@ $_SESSION['txtTotal'] = $totalValue;
                     var subAmount = parseFloat(document.getElementById('txtSubTot').value);
                     var Blockchain = parseFloat(document.getElementById('Blockchain').value);
                     var AutonomousThings = parseFloat(document.getElementById('AutonomousThings').value);
-                    var Immersive Experience = parseFloat(document.getElementById('Immersive Experience').value);
+                    var ImmersiveExperience = parseFloat(document.getElementById('ImmersiveExperience').value);
    
                     if (document.getElementById('Blockchain').checked) {
                         document.intCalc.txtSubTot.value = Blockchain;
@@ -90,17 +104,17 @@ $_SESSION['txtTotal'] = $totalValue;
                         calculation(subAmount);
                     }
                     
-                    else if (document.getElementById('Immersive Experience').checked){
-                             document.intCalc.txtSubTot.value = Immersive Experience;
-                             subAmount = Immersive Experience;
+                    else if (document.getElementById('ImmersiveExperience').checked){
+                             document.intCalc.txtSubTot.value = ImmersiveExperience;
+                             subAmount = ImmersiveExperience;
                              calculation(subAmount);
             }                 
         }
     
     function calculation(parm$Total){
         var subTotal = parseFloat(parm$Total);
-        var discCalc = parseFloat(subTotal * .30);
-        var vatCalc = parseFloat(subTotal * .40);
+        var discCalc = parseFloat(subTotal * .10);
+        var vatCalc = parseFloat(subTotal * .20);
         var total = parseFloat(subTotal - discCalc + vatCalc);
         
         document.intCalc.txtDisc.value = discCalc;
@@ -116,8 +130,8 @@ $_SESSION['txtTotal'] = $totalValue;
     }
     </script>
        
-    </body>
-        </html>
+  </body>
+</html>
 
 
 

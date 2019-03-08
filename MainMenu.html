@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IS1113 Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {margin: 0;}
+ *
+{
+  box-sizing: border-box;
+}
 
-ul.topnav {
-  list-style-type: none;
+body {
+  font-family: Arial;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: blue;
 }
 
-ul.topnav li {float: left;}
 
-ul.topnav li a {
-  display: block;
-  color: white;
+.header {
+  padding: 100px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  background-image: url(BackgroundImg.jpg);
+  color: white;
+  
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+.navbar {
+  display: block;
+  background-color: #333;
+}
 
-ul.topnav li a.active {background-color: #4CAF50;}
 
-ul.topnav li.right {float: right;}
+.navbar a {
+  color: white;
+  padding: 20px 45px;
+  text-decoration: none;
+  text-align: center;
+}
 
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 <body>
-    
 
-<ul class="topnav">
-  <li><a class="active" href="eBus1.php">eBusiness</a></li>
-  <li><a href="CV.html">CV</a></li>
-  <li><a href="Interests.html">Interests</a></li>
-  <li class="right"><a href="">About</a></li>
-</ul>
 
-<div style="padding:0 16px;">
-  <h1>IS1113 Project</h1>
-  <p></p>
-  <p></p>
-  <h4>Resize the browser window to see the effect.</h4>
+
+
+<div class="navbar">
+  <a href="ConsultingHome.html">Strategic Consulting Services</a>
+  <a href="CV.html">My CV</a>
+  <a href="Interests.html">My Interests</a>
 </div>
+
+
+<div class="header">
+  <h1>IS1113 Project</h1>
+  <p>Daniel Murphy -  <b>118436444</b></p>
+</div>
+
+
+
+
+
 
 </body>
 </html>
-
-
-
 

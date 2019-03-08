@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travel</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #00B0FF;
+}
+
+.header {
+    text-align: center;
+    background-image: url(travel.jpg);
+    padding: 20px 500px;
+    color: white;
+}
+.button{
+  background-color: #10707f;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #333;
+  color: white;
+}
+p.round1 {
+  border: 2px solid black ;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>My Travel</h1>
+</div>
+    <button type="Button" onclick="window.location.href='Interests.html'" class='button' style="float: left" > Back</button>
+    
+    <h2>Cardiff</h2>
+    <p class="round1">I stay in Penarth, Cardiff multiple times per year when visiting my grandparents. Since I was very young, 
+        Cardiff has been one of my favourite places to visit and holds many memories for me. Cardiff Bay is in my opinion 
+        one of the most beautiful spots in the world. Penarth itself is a small picturesque seaside town where we spend most
+        of our time when we visit. </p>
+    
+    <picture> 
+        <source media="(min-width: 650px)" srcset="cardiff.jpg">
+        <source media="(min-width: 465px)" srcset="cardiff.jpg">       
+        <img src="cardiff.jpg" alt="Cardiff" style="width:500px;"  >
+</picture>
+
+<h2>Girona</h2>
+    <p class="round1">In 2016, I spent two weeks in L'Estartit,a holiday town a few miles from Girona. It was a fantastic place 
+        to make new friends and enjoy the sun. While there we visited many Roman ruins in the area as well as older Iberian settlements.
+        The city of Girona is most definitely worth a visit with a beautiful Jewish quarter and old Medieval walls. It is also the setting
+        for many scenes of the TV show Game of Thrones.
+       </p>
+    
+    <picture> 
+        <source media="(min-width: 650px)" srcset="girona.jpg">
+        <source media="(min-width: 465px)" srcset="girona.jpg">       
+        <img src="girona.jpg" alt="Girona" style="width:500px;"> 
+</picture>
+       
+ <h2>Ios</h2>
+    <p class="round1">This summer a group of friends and I will be visiting Ios in Greece for two weeks.Ios is a hilly island with cliffs 
+       down to the sea on most sides, situated halfway between Naxos and Santorini. Chora (the main village)  is full of stairs 
+       and narrow paths that make it inaccessible for cars of any kind. Today, the main path through this village is completely taken over
+       by tourism in terms of restaurants, boutiques, bars and discothèques. Apart from the port and the village of Chora, Ios has a few 
+       small settlements, just a group of spread out houses in the background of major beaches (Theodoti, Kalamos, Manganari). 
+       </p>
+    
+    <picture> 
+        <source media="(min-width: 650px)" srcset="iostown.jpg">
+        <source media="(min-width: 465px)" srcset="iostown.jpg">       
+        <img src="iostown.jpg" alt="Ios" style="width:500px;"> 
+    </picture>
+       
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
